@@ -7,6 +7,7 @@ import { CurrencyListComponent } from './components/currency-list/currency-list.
 import { NavComponent } from './components/nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MarketOverviewComponent } from './components/market-overview/market-overview.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MarketOverviewComponent } from './components/market-overview/market-ove
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
