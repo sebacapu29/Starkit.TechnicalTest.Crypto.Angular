@@ -8,6 +8,16 @@ import { NavComponent } from './components/nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MarketOverviewComponent } from './components/market-overview/market-overview.component';
 import { MatTableModule } from '@angular/material/table';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { HttpClientModule } from '@angular/common/http';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatSortModule} from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -15,12 +25,22 @@ import { MatTableModule } from '@angular/material/table';
     CurrencyListComponent,
     NavComponent,
     MarketOverviewComponent
-  ],
+  ],  
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatTabsModule,
+    MatPaginatorModule,
+    MatInputModule,
+    MatFormFieldModule,
+    HttpClientModule,
+    MatProgressSpinnerModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
