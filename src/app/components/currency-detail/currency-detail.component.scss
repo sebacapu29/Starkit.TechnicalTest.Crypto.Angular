@@ -1,0 +1,25 @@
+/* cotizacion.component.css */
+mat-card-title {
+    font-size: 24px;
+    color: #007bff; /* Cambiar el color del título según tus preferencias */
+  }
+  
+  mat-card-content {
+    font-size: 16px;
+    line-height: 1.4;
+    /* Agregar otros estilos deseados para el contenido */
+  }
+  /* cotizacion.component.css */
+mat-card {
+    background-color: #f0f0f0; /* Cambiar el color de fondo según tus preferencias */
+    border-radius: 10px; /* Agregar esquinas redondeadas para mejorar el diseño */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar una sombra para destacar la card */
+  }
+  mat-card:hover {
+    transform: scale(1.05); /* Hacer la card ligeramente más grande al pasar el mouse sobre ella */
+    transition: transform 0.3s ease; /* Agregar una transición suave */
+  }
+  img{
+    width: 32px;
+    height: 32px;
+  }

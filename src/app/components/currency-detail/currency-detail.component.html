@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-header>
+        <div mat-card-avatar>
+          <!-- Agregar aquí la imagen o ícono relacionado con la criptomoneda -->
+          <img *ngIf="currencyDetail!=null" src="{{currencyDetail.logo}}" alt="Logo">          
+        </div>
+        <mat-card-title *ngIf="currencyDetail!=null">{{currencyDetail.name}}</mat-card-title>
+      </mat-card-header>
+    <div *ngIf="currencyDetail">
+
+        <mat-card-content>
+           <ng-container>
+            <p>Symbol: {{currencyDetail.symbol}}</p>
+           </ng-container>
+            <ng-container *ngIf="currencyDetail.quotes?.USD">
+                <p>Price USD: {{ currencyDetail.quotes.USD.price | currency }}</p>
+                <p>Volume 24hs: {{ currencyDetail.quotes.USD.volume_24h | currency }}</p>
+            </ng-container>
+            
+            <ng-container *ngIf="currencyDetail.quotes?.BTC">
+                <p>Price en BTC: {{ currencyDetail.quotes.BTC!.price | currency }}</p>
+                <p>Volume 24hs: {{ currencyDetail.quotes.USD.volume_24h | currency }}</p>
+            </ng-container>
+        </mat-card-content>
+    </div>
+  </mat-card>
+
+ 

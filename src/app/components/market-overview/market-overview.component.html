@@ -1,1 +1,11 @@
-<p>market-overview works!</p>
+
+<h2>Crypto Currencies Market Data</h2>
+  <mat-grid-list cols="3" rowHeight="100px">
+    <mat-grid-tile><p>Global market capitalization: ${{marketData.market_cap_usd}}</p></mat-grid-tile>
+    
+    <mat-grid-tile> <p>Total 24h volume : ${{marketData.volume_24h_usd}}</p></mat-grid-tile>
+    
+    <mat-grid-tile><p>Number of active cryptocurrencies: {{marketData.cryptocurrencies_number}}</p></mat-grid-tile>
+  </mat-grid-list>
+  
+ 

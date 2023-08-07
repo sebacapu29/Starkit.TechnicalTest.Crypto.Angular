@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { OpcionMenu } from 'src/app/interfaces/option-menu.interface';
 
 @Component({
   selector: 'app-nav',
@@ -7,9 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-
+  public enabledPanel:true;
+  public static displayComponent:boolean=true;
   constructor(private router:Router) { }
-
+  opcionesMenu: OpcionMenu[] = [
+    { ruta: '/currencies', etiqueta: 'Home' },
+    { ruta: '/market', etiqueta: 'Market Data' }
+  ];
   ngOnInit(): void {
   }
   navigate(path:string){
